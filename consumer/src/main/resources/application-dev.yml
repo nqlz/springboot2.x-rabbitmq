@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+########################################
+#   日志配置
+########################################
+logging:
+  level:
+    com.nqlz: debug
+
+spring:
+  rabbitmq:
+    username: rabbit
+    password: 123456
+    virtual-host: /
+    addresses: 127.0.0.1:5672
+    connection-timeout: 15000
+
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 5
+        max-concurrency: 10

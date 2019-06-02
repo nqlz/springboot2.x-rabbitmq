@@ -7,14 +7,9 @@
         <artifactId>springboot-rabbitmq</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>springboot-rabbitmq-consumer</artifactId>
+    <artifactId>springboot-rabbitmq-repository</artifactId>
     <version>4.0.0</version>
     <dependencies>
-        <dependency>
-            <groupId>com.nqlz</groupId>
-            <artifactId>springboot-rabbitmq-repository</artifactId>
-            <version>4.0.0</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -24,7 +19,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <classifier>exe</classifier>
-                    <mainClass>com.nqlz.consumer.ConsumerApplycation</mainClass>
+                    <mainClass>com.nqlz.repository.RepositoryApplycation</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -33,7 +28,6 @@
                         </goals>
                     </execution>
                 </executions>
-
             </plugin>
         </plugins>
     </build>

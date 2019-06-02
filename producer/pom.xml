@@ -10,6 +10,11 @@
     <artifactId>springboot-rabbitmq-producer</artifactId>
     <version>4.0.0</version>
     <dependencies>
+        <dependency>
+            <groupId>com.nqlz</groupId>
+            <artifactId>springboot-rabbitmq-repository</artifactId>
+            <version>4.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
